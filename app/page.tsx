@@ -11,6 +11,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navigation from "./components/Navigation";
 import Menu from "./components/Menu";
+import ProjectSection from "./components/ProjectSection";
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -122,6 +123,8 @@ export default function Home() {
             totalSections={sections.length}
           />
         </div>
+        
+        <ProjectSection/>
 
         {/* Coding Section */}
         <div ref={codingRef} className="min-h-screen">
